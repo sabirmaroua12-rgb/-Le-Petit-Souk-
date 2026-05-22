@@ -1,14 +1,7 @@
-import React from "react";
-import {
-    FlatList,
-    Image,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-} from "react-native";
+import menuData from "@/data/data";
+import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const Menu = ({ navigation }: any) => {
+const MenuScreen = ({ navigation }: any) => {
   const renderItem = ({ item }: any) => (
     <View style={styles.card}>
       <Image source={item.image} style={styles.image} />
@@ -44,7 +37,6 @@ const Menu = ({ navigation }: any) => {
   );
 };
 
-export default Menu;
 
 const styles = StyleSheet.create({
   container: {
@@ -53,11 +45,12 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   header: {
+    fontWeight: "bold",
     fontSize: 26,
     textAlign: "center",
-    marginBottom: 20,
-    fontWeight: "bold",
+    marginBottom: 60,
     color: "#2C3E50",
+
   },
   card: {
     flexDirection: "row",
@@ -79,6 +72,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     fontWeight: "600",
+    margin: 12,
   },
   subtitle: {
     color: "#6C7A89",
@@ -105,4 +99,5 @@ const styles = StyleSheet.create({
     color: "#2C3E50",
   },
 });
-   
+
+export default MenuScreen; 
