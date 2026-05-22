@@ -1,4 +1,4 @@
-import { Couscous, Harira, Juice, Msemn, Pastila, Tagine, Thee } from "./imagedata";
+import { couscous, Harira, Juice, Msemn, Pastila, Tagine, Thee } from "./imagedata";
 
 const menuData = [
   {
@@ -15,7 +15,7 @@ const menuData = [
     title: "Couscous Royal",
     subtitle: "Plat chaud",
     price: "65 MAD",
-    image: Couscous,
+    image: couscous,
   },
   {
     id: "3",
